@@ -1,0 +1,19 @@
+{
+  "name": "emath",
+  "version": "0.0.3",
+  "description": "This is a module for math.",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "emath"
+  },
+  "keywords": [
+    "math",
+    "maths",
+    "yhzheng"
+  ],
+  "author": "yhzheng",
+  "license": "ISC",
+}
