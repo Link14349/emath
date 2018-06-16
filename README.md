@@ -17,3 +17,70 @@ Download
 
 Usage
 ------
+```javascript
+/*
+* A <Hello world> of emath.
+*/
+var emath = require("emath");// require emath
+var fractions1 = new fractions({
+    denominator: 10,
+    numerator: 1
+});// create a fractions
+console.log(fractions1.value());// print the value of fractions1,output: 0.1
+```
+You a use function MCF or LCM to get maximum common factor or least common multiple.
+```javascript
+var emath = require("emath");
+var mcf = emath.number.MCF(20,12);
+var lcm = emath.number.LCM(20,12);
+console.log("mcf:" + mcf + ",lcm:" + lcm);// output:4,60
+```
+And there is a important function of emath:expression(exp).
+```javascript
+var emath = require("emath");
+var exp = "1\n---\n5";
+var value = emath.number.expression(exp);
+console.log(value);// output:0.2
+```
+You can use sigma by function sigma of function expression.
+```javascript
+/*
+* The first function to use sigma
+*/
+var emath = require("emath");
+var value = emath.number.sigma("i",10,{
+    name: "i",
+    value: 1
+});
+console.log(value);
+```
+```javascript
+/*
+* The second function to use sigma
+*/
+var emath = require("emath");
+var exp = "10\n--\n /\n | i\n \\\n--\ni=1";
+var value = emath.number.expression(exp);
+console.log(value);
+```
+And you also can write some expression in a file.<br/>
+sigma.math:<br/>
+```
+10
+--
+ /
+ | 2^i
+ \
+--
+i=1
+```
+Then use function expression.
+```javascript
+var emath = require("emath");
+var expFile = "sigma.math";
+var value = emath.number.expression(expFile);
+console.log(value);
+```
+License
+--------
+_ISC_
