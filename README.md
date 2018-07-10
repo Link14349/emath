@@ -22,7 +22,7 @@ Usage
 * A <Hello world> of emath.
 */
 var emath = require("emath");// require emath
-var fractions1 = new fractions({
+var fractions1 = new emath.number.fractions({
     denominator: 10,
     numerator: 1
 });// create a fractions
@@ -48,9 +48,9 @@ You can use sigma by function sigma of function expression.
 * The first function to use sigma
 */
 var emath = require("emath");
-var value = emath.number.sigma("i",10,{
+var value = emath.number.sigma("2^i",10,{
     name: "i",
-    value: 1
+    value: 0
 });
 console.log(value);
 ```
@@ -59,7 +59,7 @@ console.log(value);
 * The second function to use sigma
 */
 var emath = require("emath");
-var exp = "10\n--\n /\n | i\n \\\n--\ni=1";
+var exp = "10\n==\n /\n | 2^i\n \\\n==\ni=0";
 var value = emath.number.expression(exp);
 console.log(value);
 ```
@@ -67,18 +67,19 @@ And you also can write some expression in a file.<br/>
 sigma.math:<br/>
 ```
 10
---
+==
  /
  | 2^i
  \
---
-i=1
+==
+i=0
 ```
 Then use function expression.
 ```javascript
 var emath = require("emath");
-var expFile = "sigma.math";
-var value = emath.number.expression(expFile);
+var fs = require("fs");
+var exp = fs.readFileSync("sigma.math").toString();
+var value = emath.number.expression(exp);
 console.log(value);
 ```
 License
