@@ -8,6 +8,28 @@ Effectual? Also right.<br/>
 There are so many means of "EMATH".<br/>
 All are right.
 
+Functions in each part of emath
+---------------------------------
+|  Part   |   For   |  The number of functions  |  The number of classes   |
+|:------:|:--------------------:|:--------------------:|:--------------:|
+|  nativeMath  |   Get the native math in JavaScript.   |  none  |  none  |
+|  number  |   Perform common expression operations and provide fractional classes.   |  9  |  1  |
+|  compare  |   For compare max and min.  |  4  |  0  |
+|  dataStruct  |   For create some data structure.  |  0  |  3  |
+
+
+
+New property in this version
+---------------------------
+- [x] Changed the function expression
+- [x] Added part: dataStruct
+    - [x] Added class: stack
+    - [x] Added class: queue
+    - [x] Added class: priority_queue
+- [x] Perfect the annotation
+- [x] Added the documentation of emath
+
+
 Download
 ---------
 ##### Download with npm:
@@ -82,6 +104,7 @@ var exp = fs.readFileSync("sigma.math").toString();
 var value = emath.number.expression(exp);
 console.log(value);
 ```
+And now,we have three data structure:stack,queue and priority_queue.
 License
 --------
 _ISC_
