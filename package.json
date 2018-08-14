@@ -1,6 +1,6 @@
 {
   "name": "emath",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "description": "This is a module for math.",
   "main": "index.js",
   "directories": {
