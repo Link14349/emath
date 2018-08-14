@@ -1,6 +1,6 @@
 {
   "name": "emath",
-  "version": "1.4.1",
+  "version": "1.4.2",
   "description": "This is a module for math.",
   "main": "index.js",
   "directories": {
@@ -19,7 +19,7 @@
     "yhzheng"
   ],
   "author": "yhzheng",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/qianduanXIAOHAOZI/emath/issues"
   },
