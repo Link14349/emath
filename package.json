@@ -1,6 +1,6 @@
 {
   "name": "emath",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "description": "This is a module for math.",
   "main": "index.js",
   "directories": {
@@ -23,5 +23,6 @@
   "bugs": {
     "url": "https://github.com/qianduanXIAOHAOZI/emath/issues"
   },
-  "homepage": "https://github.com/qianduanXIAOHAOZI/emath#readme"
+  "homepage": "http://yhzheng.com/emath/doc/index.html",
+  "dependencies": {}
 }
