@@ -6,9 +6,7 @@ function each(q) {
     });
 }
 function test() {
-    each(cq);
     console.log(cq.front(), cq.back());
-    console.log("========================");
 }
 
 let cq = new queue.CircularQueue(5);
