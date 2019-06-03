@@ -1,12 +1,10 @@
 EMATH
 ======
-#### EMATH is a module for math.
+#### EMATH is a framework for math.
 What's the mean of "EMATH"?<br/>
 Just easy? Maybe.<br/>
 Energetic? Maybe.<br/>
 Effectual? Also right.<br/>
-There are so many means of "EMATH".<br/>
-All are right.
 
 New property in this version
 ---------------------------

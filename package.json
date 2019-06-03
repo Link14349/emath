@@ -1,7 +1,7 @@
 {
   "name": "emath",
   "version": "1.4.2",
-  "description": "This is a module for math.",
+  "description": "This is a framework for math.",
   "main": "index.js",
   "directories": {
     "lib": "lib"
